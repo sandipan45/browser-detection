@@ -63,5 +63,9 @@ export const onInitialClientRender = () => {
 		var diag = Math.round(Math.sqrt(pyth)/72*10)/10;
 		document.getElementById("diagonalScreen").innerHTML = Math.round(widthView/72*10)/10+'" Width<br>'+ Math.round(heightView/72*10)/10+'" Height<br>'+diag+'" Diagonal<br>';
 		
+		const pixelDensity = require("./dist/pixel-density");
+		document.getElementById("pixelDensity").innerHTML = pixelDensity;
+		
+
 
 }

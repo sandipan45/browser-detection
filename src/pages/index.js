@@ -247,7 +247,7 @@ const IndexPage = () => (
     </tr>
 	<tr>
       <th scope="row">Device Pixel Ratio :</th>
-      <td className="valueRed"></td>
+      <td className="valueRed" id="pixelDensity"></td>
     </tr>
 
   </tbody>

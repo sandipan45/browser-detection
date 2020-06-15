@@ -64,7 +64,7 @@ export const onInitialClientRender = () => {
 		document.getElementById("diagonalScreen").innerHTML = Math.round(widthView/72*10)/10+'" Width<br>'+ Math.round(heightView/72*10)/10+'" Height<br>'+diag+'" Diagonal<br>';
 		
 		const pixelDensity = require("./dist/pixel-density");
-		document.getElementById("pixelDensity").innerHTML = pixelDensity;
+		document.getElementById("pixelDensity").innerHTML = pixelDensity(widthView, heightView, diag);
 		
 
 

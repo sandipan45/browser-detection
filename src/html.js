@@ -14,6 +14,7 @@ export default function HTML(props) {
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes}>
+	  <script src="https://cdn.jsdelivr.net/npm/pixel-density@1"></script>
         {props.preBodyComponents}
         <div
           key={`body`}

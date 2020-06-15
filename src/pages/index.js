@@ -4,6 +4,12 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import * as rdd from 'react-device-detect'
 
+const getRes = require('get-res');
+//console.log(getRes()); 
+getRes().then(data => {
+    console.log(data);
+});
+
 
 const IndexPage = () => (
   <Layout>

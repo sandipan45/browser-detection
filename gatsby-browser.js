@@ -58,5 +58,9 @@ export const onInitialClientRender = () => {
 		var heightView = document.documentElement.clientHeight;;
 		document.getElementById("innerWidth").innerHTML = widthView;
 		document.getElementById("innerHeight").innerHTML = heightView;
+		
+		var pyth = (widthView*widthView)+(heightView*heightView);
+		var diag = Math.round(Math.sqrt(pyth)/72*10)/10;
+		document.getElementById("diagonalScreen").innerHTML = Math.round(widthView/72*10)/10+'" Width<br>'+ Math.round(heightView/72*10)/10+'" Height<br>'+diag+'" Diagonal<br>';
 
 }

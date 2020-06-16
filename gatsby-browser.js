@@ -11,12 +11,21 @@ const $ = require("jquery")
 export const onInitialClientRender = () => {
   $.getJSON('https://ipapi.co/json/', function(data){
 	//console.log("browser.render data", data);
-    $("#ipaddress").html(data.ip);
+    //$("#ipaddress").html(data.ip);
 	$("#country").html(data.country_name);
+	$("#countryCode").html(data.country_code);
+	$("#countryCapital").html(data.country_capital);
+	$("#countryCallingCode").html(data.country_calling_code);
+	$("#countryIso").html(data.country_code_iso3);
 	$("#city").html(data.city);
 	$("#zip").html(data.postal);
 	$("#isp").html(data.org);
 	$("#timezone").html(data.timezone);
+  });
+  
+  $.getJSON('https://api.ipify.org/?format=json', function(data){
+	//console.log("browser.render data", data);
+    $("#ipaddress").html(data.ip);
   });
 		
 		var req = new XMLHttpRequest();
@@ -65,6 +74,7 @@ export const onInitialClientRender = () => {
 		
 		const pixelDensity = require("./dist/pixel-density");
 		document.getElementById("pixelDensity").innerHTML = pixelDensity(widthView, heightView, diag);
+
 		
 
 

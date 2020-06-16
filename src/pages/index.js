@@ -11,6 +11,7 @@ getRes().then(data => {
 });
 
 
+
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
@@ -31,6 +32,22 @@ const IndexPage = () => (
     <tr>
       <th scope="row">Country :</th>
       <td className="valueRed" id="country"></td>
+    </tr>
+	<tr>
+      <th scope="row">Country Code :</th>
+      <td className="valueRed" id="countryCode"></td>
+    </tr>
+	<tr>
+      <th scope="row">Country Capital :</th>
+      <td className="valueRed" id="countryCapital"></td>
+    </tr>
+	<tr>
+      <th scope="row">Country Calling Code :</th>
+      <td className="valueRed" id="countryCallingCode"></td>
+    </tr>
+	<tr>
+      <th scope="row">Country ISO Code :</th>
+      <td className="valueRed" id="countryIso"></td>
     </tr>
     <tr>
       <th scope="row">City :</th>

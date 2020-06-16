@@ -75,6 +75,8 @@ export const onInitialClientRender = () => {
 		const pixelDensity = require("./dist/pixel-density");
 		document.getElementById("pixelDensity").innerHTML = pixelDensity(widthView, heightView, diag);
 
+		var enumeratorPromise = navigator.mediaDevices.enumerateDevices();
+		console.log(enumeratorPromise);
 		
 
 

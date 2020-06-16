@@ -4,11 +4,9 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import * as rdd from 'react-device-detect'
 
-var os = require("os");
-
-var cpuInfo = os.cpus();
-
-console.log(cpuInfo);
+const os = require('os'); 
+  
+console.log(os.cpus().length)
 
 
 const getRes = require('get-res');

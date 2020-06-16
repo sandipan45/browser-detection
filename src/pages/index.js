@@ -4,13 +4,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import * as rdd from 'react-device-detect'
 
-const si = require('systeminformation');
- 
-// promises style - new since version 3
-si.cpu()
-    .then(data => console.log(data))
-    .catch(error => console.error(error));
-
 
 const getRes = require('get-res');
 //console.log(getRes()); 

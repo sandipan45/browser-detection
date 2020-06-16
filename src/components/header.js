@@ -4,7 +4,9 @@ import React from "react"
 
 const Header = ({ siteTitle }) => (
   <header>
-    <div></div>
+    <div style={{
+            margin: `10px`,
+          }}>&nbsp;</div>
   </header>
 )
 

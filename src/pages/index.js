@@ -270,31 +270,27 @@ const IndexPage = () => (
     </tr>
 	<tr>
       <th scope="row">OS Platform :</th>
-      <td className="valueRed">os.platform()</td>
+      <td className="valueRed">{os.platform()}</td>
     </tr>
 	<tr>
       <th scope="row">OS Architecture :</th>
-      <td className="valueRed">os.arch()</td>
+      <td className="valueRed">{os.arch()}</td>
     </tr>
 	<tr>
       <th scope="row">Type :</th>
-      <td className="valueRed">os.type()</td>
+      <td className="valueRed">{os.type()}</td>
     </tr>
 	<tr>
       <th scope="row">Total Memory :</th>
-      <td className="valueRed">os.totalmem()</td>
+      <td className="valueRed">{os.totalmem()}</td>
     </tr>
     <tr>
       <th scope="row">Free Memory :</th>
-      <td className="valueRed">os.freemem()</td>
+      <td className="valueRed">{os.freemem()}</td>
     </tr>
 	<tr>
       <th scope="row">OS Release :</th>
-      <td className="valueRed">os.release()</td>
-    </tr>
-	<tr>
-      <th scope="row">OS Release :</th>
-      <td className="valueRed">os.release()</td>
+      <td className="valueRed">{os.release()}</td>
     </tr>
   </tbody>
 </table>

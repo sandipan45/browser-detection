@@ -4,10 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import * as rdd from 'react-device-detect'
 
-const os = require('os'); 
-  
-console.log(os.cpus().length)
-
+const os = require('os');  
 
 const getRes = require('get-res');
 //console.log(getRes()); 
@@ -271,7 +268,34 @@ const IndexPage = () => (
       <th scope="row">Device Pixel Ratio :</th>
       <td className="valueRed" id="pixelDensity"></td>
     </tr>
-
+	<tr>
+      <th scope="row">OS Platform :</th>
+      <td className="valueRed">os.platform()</td>
+    </tr>
+	<tr>
+      <th scope="row">OS Architecture :</th>
+      <td className="valueRed">os.arch()</td>
+    </tr>
+	<tr>
+      <th scope="row">Type :</th>
+      <td className="valueRed">os.type()</td>
+    </tr>
+	<tr>
+      <th scope="row">Total Memory :</th>
+      <td className="valueRed">os.totalmem()</td>
+    </tr>
+    <tr>
+      <th scope="row">Free Memory :</th>
+      <td className="valueRed">os.freemem()</td>
+    </tr>
+	<tr>
+      <th scope="row">OS Release :</th>
+      <td className="valueRed">os.release()</td>
+    </tr>
+	<tr>
+      <th scope="row">OS Release :</th>
+      <td className="valueRed">os.release()</td>
+    </tr>
   </tbody>
 </table>
   </Layout>

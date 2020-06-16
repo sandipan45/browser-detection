@@ -4,6 +4,11 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import * as rdd from 'react-device-detect'
 
+const cpuid = require('cpuid-git');
+const cpuidInfo = cpuid();
+
+console.log(cpuidInfo);
+
 
 const getRes = require('get-res');
 //console.log(getRes()); 

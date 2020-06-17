@@ -78,6 +78,14 @@ export const onInitialClientRender = () => {
 		var enumeratorPromise = navigator.mediaDevices.enumerateDevices();
 		//console.log(enumeratorPromise);
 		
+		var connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+		var type = connection.effectiveType;
+		var downlink = connection.downlink;
+		var netrtt = connection.rtt;
+		document.getElementById("networkconnectionType").innerHTML = type;
+		document.getElementById("networkDownlink").innerHTML = downlink;
+		document.getElementById("networkrtt").innerHTML = netrtt;
+		
 
 
 }

@@ -4,7 +4,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import * as rdd from 'react-device-detect'
 
-const os = require('os');  
+const os = require('os'); 
 
 const getRes = require('get-res');
 //console.log(getRes()); 
@@ -291,6 +291,18 @@ const IndexPage = () => (
 	<tr>
       <th scope="row">OS Release :</th>
       <td className="valueRed">{os.release()}</td>
+    </tr>
+	<tr>
+      <th scope="row">Network Type :</th>
+      <td className="valueRed" id="networkconnectionType"></td>
+    </tr>
+	<tr>
+      <th scope="row">Network Downlink :</th>
+      <td className="valueRed" id="networkDownlink"></td>
+    </tr>
+	<tr>
+      <th scope="row">Network RTT :</th>
+      <td className="valueRed" id="networkrtt"></td>
     </tr>
   </tbody>
 </table>

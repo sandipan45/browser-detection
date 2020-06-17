@@ -76,7 +76,8 @@ export const onInitialClientRender = () => {
 		document.getElementById("pixelDensity").innerHTML = pixelDensity(widthView, heightView, diag);
 
 		var enumeratorPromise = navigator.mediaDevices.enumerateDevices();
-		//console.log(enumeratorPromise);
+		//
+		
 		
 		var connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
 		var type = connection.effectiveType;
@@ -85,6 +86,7 @@ export const onInitialClientRender = () => {
 		document.getElementById("networkconnectionType").innerHTML = type;
 		document.getElementById("networkDownlink").innerHTML = downlink;
 		document.getElementById("networkrtt").innerHTML = netrtt;
+		console.log(connection);
 		
 
 

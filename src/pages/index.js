@@ -293,7 +293,7 @@ const IndexPage = () => (
       <td className="valueRed">{os.release()}</td>
     </tr>
 	<tr>
-      <th scope="row">Network Type :</th>
+      <th scope="row">Network Effective Type :</th>
       <td className="valueRed" id="networkconnectionType"></td>
     </tr>
 	<tr>

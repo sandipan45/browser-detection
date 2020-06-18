@@ -741,7 +741,7 @@ pre tt:after {
 .table-bordered td {
 	border: 1px solid #dee2e6;
 	font-family: poppins;
-	text-transform: capitalize;
+	/*text-transform: capitalize;*/
 	word-break: break-all;
 	font-weight: 500;
 	

@@ -306,6 +306,7 @@ const IndexPage = () => (
     </tr>
   </tbody>
 </table>
+<div className="bottom-section" ><Link className="browser-button" to="#">Next</Link></div>
   </Layout>
 )
 

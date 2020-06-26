@@ -757,24 +757,6 @@ pre tt:after {
 	
 }
 
-.bottom-section {
-    padding: 15px 30px 17px;
-    background: #fa4879;
-    font-size: 22px;
-    color: #fff;
-    font-weight: bold;
-    width: auto;
-    display: inline-block;
-    margin-top: 40px;
-    -webkit-border-radius: 40px;
-    -moz-border-radius: 40px;
-    border-radius: 40px;
-}
-
-.bottom-section:hover {
-    background: #7c3a74;
-}
-
 .w3-table-all tr:nth-child(2n) {
 	background-color: #f1f1f1;
 }
